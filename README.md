@@ -1,6 +1,26 @@
 # bc_python_flask_form
 BeCode Python - Flask Form Module
 
+## Project
+
+### Length
+
+- 1 day to learn about flask
+- 4 days to develop the project
+
+### Skills
+
+- Backend: Python Programming (initiation to logical structures)
+- Validation and Sanitazation of a form
+- Implementing POST and GET requests
+- Implementing templates with Jinja
+
+### Situation
+
+The company "Hackers Poulette" is selling DIY kits and accessories for Raspberry Pi's, they want to implement a form for technical support.
+
+Your mission is to develop a python script, showing a contact form and handling its use (sanitazation, validation, submit and feedback)
+
 ## Rules
 
 ### Performance criteria
@@ -10,14 +30,14 @@ BeCode Python - Flask Form Module
 - The form should sanitize and have server side validation.
 - If the sanitazation and validation are ok, a "Thank you for your message" page should show with a run-down of all the information the user input.
 - Implement antispam and honeypots
-- Required fields:
+- **Required fields**:
     - Full name
     - Email
     - Country (list)
     - Message
     - Gender (radio box)
     - Subject (Repair, Order, Other)
-- All fields are requiered except "Subject", which will default to "Other" value if not entered
+- All fields are required except "Subject", which will default to "Other" value if not entered
 
 
 ### Goals
