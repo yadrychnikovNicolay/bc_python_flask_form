@@ -67,3 +67,13 @@ At the end of the project, the following skills should be acquired:
 Navigate to the url the terminal gives you (localhost:5000), you can see an example message already displayed.
 
 Navigate to "Create" and create a message
+
+## Ressources
+
+[Install Flask](https://flask.palletsprojects.com/en/2.3.x/installation/)
+
+[The tutorial I used](https://www.digitalocean.com/community/tutorials/how-to-use-web-forms-in-a-flask-application)
+
+[Flask](https://flask.palletsprojects.com/en/2.3.x/)
+
+[Jinja](https://jinja.palletsprojects.com/en/3.1.x/)

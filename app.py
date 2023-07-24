@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 
 app = Flask(__name__)
-#app.config['SECRET_KEY'] = '5767c4f5ed4d7a03e49a402bfb91cd5cbff8a65807cb7df1'
+app.config['SECRET_KEY'] = '5767c4f5ed4d7a03e49a402bfb91cd5cbff8a65807cb7df1'
 
 messages = [{'fullname': 'Name Example',
              'email': 'email@example.com',
