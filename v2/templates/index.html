@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} New Message {% endblock %}</h1>
+
+    <form method="POST" action="/">
+        {{ form.csrf_token }}
+
+        <!-- SUBJECT -->
+        <p>
+            {{ form.subject.label }} - {{ form.subject() }}
+        </p>
+
+        {% if form.subject.errors %}
+            <ul class="errors">
+                {% for error in form.subject.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- FULLNAME -->
+        <p>
+            {{ form.fullname.label }}
+        </p>
+        {{ form.fullname() }}
+
+        {% if form.fullname.errors %}
+            <ul class="errors">
+                {% for error in form.fullname.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- EMAIL -->
+        <p>
+            {{ form.email.label }}
+        </p>
+        {{ form.email() }}
+
+        {% if form.email.errors %}
+            <ul class="errors">
+                {% for error in form.email.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- GENDER -->
+        <p>
+            {{ form.gender.label }}
+            {{ form.gender() }}
+        </p>
+
+        {% if form.gender.errors %}
+            <ul class="errors">
+                {% for error in form.gender.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- COUNTRY -->
+        <p>
+            {{ form.country.label }}
+        </p>
+        {{ form.country() }}
+
+        {% if form.country.errors %}
+            <ul class="errors">
+                {% for error in form.country.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- MESSAGE -->
+        <p>
+            {{ form.message.label }}
+        </p>
+        {{ form.message(rows=10, cols=50) }}
+
+        {% if form.country.errors %}
+            <ul class="errors">
+                {% for error in form.country.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <p>
+            <input type="submit" value="Send">
+        </p>
+    </form>
+
+{% endblock %}

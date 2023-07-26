@@ -10,7 +10,6 @@ messages = [{'fullname': 'Name Example',
              'subject': 'Other',
              'gender': 'Male'}]
 
-
 @app.route('/')
 def index():
     return render_template('index.html', messages=messages)

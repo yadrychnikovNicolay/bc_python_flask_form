@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <style>
+
+        body {
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            font-size: 3em;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .errors {
+            color: rgb(255, 31, 31);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">New Message</a>
+        <a href="{{ url_for('messages') }}">Messages</a>
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

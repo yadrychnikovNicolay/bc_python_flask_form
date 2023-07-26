@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Messages {% endblock %}</h1>
+    <hr>
+    {% for message in messages_list %}
+        <p>Subject - {{ message['subject'] }} </p>
+        <h4> {{ message['fullname'] }} - {{ message['email'] }}</h4>
+        <p><i> {{ message['gender'] }} - {{ message['country'] }} </i></p>
+        <p>{{message['message']}}</p>
+        <p>{{message['remote_addr']}}</p>
+    <hr>
+    {% endfor %}
+{% endblock %}
